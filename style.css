@@ -1,0 +1,43 @@
+/* CSS files add styling rules to the content */
+
+body
+{
+  text-align: center;
+}
+body>div
+{
+  display: flex;
+  width: 612px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin:0 auto;
+}
+div>div
+{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+input
+{
+  margin: 20px;
+}
+button
+{
+  margin: 20px;
+  font-size: 20px;
+}
+.alive  /*класс живых клеток*/
+{
+  background-color: lightgray;
+}
+.dead  /*класс мёртвых клеток*/
+{
+  background-color: gray;
+}
+.edge  /*класс крайних клеток, не позволяющий выходить за пределы внутреннего поля */
+{
+  background-color: white;
+  border: 1px solid white;
+}
