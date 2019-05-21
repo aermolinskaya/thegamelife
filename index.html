@@ -14,48 +14,15 @@
   </head>  
   <body>
     <h1 id="gameTitle">Игра "Жизнь"</h1>
-    <div id="field">
-      <div class="edge" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="alive" state-mouse="off"></div>
-      <div class="alive" state-mouse="off"></div>
-      <div class="alive" state-mouse="off"></div>
-      <div class="alive" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="alive" state-mouse="off"></div>
-      <div class="alive" state-mouse="off"></div>
-      <div class="alive" state-mouse="off"></div>
-      <div class="alive" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="alive" state-mouse="off"></div>
-      <div class="alive" state-mouse="off"></div>
-      <div class="alive" state-mouse="off"></div>
-      <div class="alive" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="alive" state-mouse="off"></div>
-      <div class="alive" state-mouse="off"></div>
-      <div class="alive" state-mouse="off"></div>
-      <div class="alive" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-      <div class="edge" state-mouse="off"></div>
-    </div>
+    <div id="field"></div>
+    <label>Размер поля в диапазоне от 2 до 100 (ширина x высота):</label>
+    <input id="lengthRowInside" type="number" min="2" max="100" value="4" size="1" maxlength="2"><label>x</label>
+    <input id="lengthColumnInside" type="number" min="2" max="100" value="4" size="1" maxlength="2">
+    <button id="createField">Создать поле</button>
     <div class="alive" state-mouse="off">Живые</div>
     <div class="dead" state-mouse="off">Мёртвые</div>
     <label>Время итераций в секундах: </label>
     <input id="iterationTime" value="3" size="1" maxlength="2">
-    <br><button id="start">Старт</button><button id="stop">Стоп</button>
+    <br><button id="start" disabled>Старт</button><button id="stop" disabled>Стоп</button>
   </body>
 </html>

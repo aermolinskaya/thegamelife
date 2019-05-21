@@ -7,7 +7,7 @@ body
 body>div
 {
   display: flex;
-  width: 612px;
+  width: 600px;
   flex-wrap: wrap;
   flex-direction: row;
   margin:0 auto;
@@ -15,8 +15,8 @@ body>div
 div>div
 {
   display: flex;
-  width: 100px;
-  height: 100px;
+  width: 148px;
+  height: 98px;
   border: 1px solid black;
 }
 input
@@ -26,6 +26,7 @@ input
 button
 {
   margin: 20px;
+  margin-bottom: 50px;
   font-size: 20px;
 }
 .alive  /*класс живых клеток*/
